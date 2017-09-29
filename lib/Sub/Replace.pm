@@ -6,6 +6,8 @@ package Sub::Replace;
 use 5.010001;
 no strict 'refs';
 
+our @EXPORT_OK = qw(sub_replace);
+
 use Carp ();
 use Sub::Delete 1.00002 ();
 
