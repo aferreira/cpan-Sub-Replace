@@ -4,7 +4,6 @@ package Sub::Replace;
 # ABSTRACT: Replace subroutines in packages with controlled effects
 
 use 5.010001;
-no strict 'refs';
 
 our @EXPORT_OK = qw(sub_replace);
 
