@@ -90,6 +90,8 @@ This module provides a C<sub_replace> function to address that.
 
 =head1 FUNCTIONS
 
+L<Sub::Replace> implements the following functions, which are exportable.
+
 =head2 sub_replace
 
     $old = Sub::Replace::sub_replace($name, $code);
