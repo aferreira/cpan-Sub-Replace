@@ -30,8 +30,8 @@ sub _sub_replace {
 
         my $fullname = "${stashname}${name}";
 
-        my $old = $old{$fullname} = \&{$fullname};
-        Sub::Delete::delete_sub $fullname if defined $old;
+        $old{$fullname} = exists &$fullname ? \&$fullname : undef;
+        Sub::Delete::delete_sub $fullname;
         *{$fullname} = $sub if defined $sub;
     }
 
